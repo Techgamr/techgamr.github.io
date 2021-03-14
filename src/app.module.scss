@@ -1,3 +1,13 @@
 .app {
+    overflow: hidden;
+    background-color: #747474;
+    min-width: 100vw;
+    min-height: 100vh;
 
+    display: flex;
+    flex-direction: column;
+}
+
+.appText {
+    align-self: center;
 }
