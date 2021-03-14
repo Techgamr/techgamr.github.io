@@ -27,7 +27,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    jobs:
+    steps:
       - name: ls
         run: ls
       - name: Build
