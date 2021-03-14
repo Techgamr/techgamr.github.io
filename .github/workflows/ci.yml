@@ -30,7 +30,7 @@ jobs:
           git config --global user.email $user_email
           git remote set-url origin https://${github_token}@github.com/${repository}
           yarn deploy
-        if: ${{ github.event_name == 'push' && matrix.node-version == "15.x" }}
+        if: ${{ github.event_name == 'push' && matrix.node-version == '15.x' }}
         env:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
