@@ -27,7 +27,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'push' && matrix.node-version == '15.x' }}
+    if: ${{ github.event_name == 'push' }}
     steps:
       - name: Use Node.js 15.x
         uses: actions/setup-node@v1
