@@ -24,6 +24,14 @@ jobs:
         run: yarn build
       - name: Test project
         run: yarn test
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    jobs:
+      - name: ls
+        run: ls
+      - name: Build
+        run: yarn build
       - name: Deploy
         run: |
           git config --global user.name $user_name
