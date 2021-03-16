@@ -2,4 +2,4 @@
 [![CI/CD](https://github.com/Techgamr/techgamr.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/Techgamr/techgamr.github.io/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/Techgamr/techgamr.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/Techgamr/techgamr.github.io/actions/workflows/codeql.yml)
 
-My personal Github site
+Sources to my personal Github site
