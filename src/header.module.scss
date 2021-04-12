@@ -1,5 +1,7 @@
+@import "./index.scss";
+
 .header {
-  background-color: var(--bg-color);
+  background-color: $bg-color;
 
   display: flex;
   flex-direction: row;
