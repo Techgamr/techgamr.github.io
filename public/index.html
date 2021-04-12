@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-        <meta charset="utf-8"/>
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="#000000" name="theme-color"/>
-        <meta content="Techgamr personal site" name="description"/>
-        <link href="%PUBLIC_URL%/logo192.png" rel="apple-touch-icon"/>
-        <title>Techgamr personal site</title>
-    </head>
-    <body>
-        <div id="root"></div>
-    </body>
+  <head>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#000000" name="theme-color" />
+    <meta content="Techgamr personal site" name="description" />
+    <link href="%PUBLIC_URL%/logo192.png" rel="apple-touch-icon" />
+    <title>Techgamr personal site</title>
+    <script>
+      const location = window.location;
+      if (location.search[1] === "/") {
+        var decoded = location.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          location.pathname.slice(0, -1) + decoded + location.hash
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
