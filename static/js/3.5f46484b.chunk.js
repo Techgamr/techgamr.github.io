@@ -1,2 +1,2 @@
 (this["webpackJsonptechgamr.github.io"]=this["webpackJsonptechgamr.github.io"]||[]).push([[3],{391:function(e,a,t){"use strict";t.r(a),t.d(a,"default",(function(){return i}));t(1);var r=t(183),h=t(394),n=t.n(h),c=t(15);function i(){return Object(c.jsxs)("div",{className:n.a.header,children:[Object(c.jsx)(r.b,{className:n.a.headerLink,to:"/",children:"Home"}),Object(c.jsx)(r.b,{className:n.a.headerLink,to:"/about",children:"About"})]})}},394:function(e,a,t){e.exports={root:"header_root__3_DCs",header:"header_header__P6cf0",appText:"header_appText__2Qppu",headerLink:"header_headerLink__1Onl5"}}}]);
-//# sourceMappingURL=3.487fcc49.chunk.js.map
+//# sourceMappingURL=3.5f46484b.chunk.js.map
