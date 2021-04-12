@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 const Header = React.lazy(() => import("./header"));
 const Homepage = React.lazy(() => import("./pages/Homepage"));
 const About = React.lazy(() => import("./pages/About"));
@@ -23,7 +23,7 @@ const bodySuspenseFallback = (
 export default class App extends React.Component<{}, {}> {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <React.Suspense
           fallback={
             <div
@@ -49,7 +49,7 @@ export default class App extends React.Component<{}, {}> {
             </React.Suspense>
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

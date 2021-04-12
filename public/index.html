@@ -8,23 +8,6 @@
     <meta content="Techgamr personal site" name="description" />
     <link href="%PUBLIC_URL%/logo192.png" rel="apple-touch-icon" />
     <title>Techgamr personal site</title>
-    <script>
-      const loc = window.location;
-      if (loc.search[1] === "/") {
-        var decoded = loc.search
-          .slice(1)
-          .split("&")
-          .map(function (s) {
-            return s.replace(/~and~/g, "&");
-          })
-          .join("?");
-        window.history.replaceState(
-          null,
-          null,
-          loc.pathname.slice(0, -1) + decoded + loc.hash
-        );
-      }
-    </script>
   </head>
   <body>
     <div id="root"></div>
